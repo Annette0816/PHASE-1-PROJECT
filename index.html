@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINCARE ROUTINE FINDER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="skin-type-container">
+        <h1>Skincare Routine Finder</h1>
+        <label for="skin-type">Select Your Skin Type:</label>
+        <select name="" id="skin-type">
+            <option value="normal">Normal Skin</option>
+            <option value="oily">Oily Skin</option>
+            <option value="dry">Dry Skin</option>
+            <option value="combination">Combination Skin</option>
+            <option value="sensitive">Sensitive Skin</option>
+        </select>
+        <button id="show-routine">Show Routine</button>
+
+        <div id="routine">
+            <h2 id="skin-title"></h2>
+            <h3>Morning Routine</h3>
+            <ul id="morning-list"></ul>
+            <h3>Night Routine</h3>
+            <ul id="night-list"></ul>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
