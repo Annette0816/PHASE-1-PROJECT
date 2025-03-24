@@ -1,0 +1,82 @@
+{
+    "skincare": [
+      {
+        "skinType": "normal",
+        "description": "Balanced skin, not too oily or dry.",
+        "morning": [
+          { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
+          { "step": "Hydrating Toner", "image": "images/toner.jpg" },
+          { "step": "Lightweight Moisturizer", "image": "images/moisturizer.jpg" },
+          { "step": "Sunscreen SPF 30+", "image": "images/sunscreen.jpg" }
+        ],
+        "night": [
+          { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/serum.jpg" },
+          { "step": "Moisturizing Night Cream", "image": "images/nightcream.jpg" }
+        ]
+      },
+      {
+        "skinType": "oily",
+        "description": "Shiny, greasy skin with frequent acne or blackheads.",
+        "morning": [
+          { "step": "Oil-Control Cleanser", "image": "images/oilcleanser.jpg" },
+          { "step": "Niacinamide Toner", "image": "images/toner.jpg" },
+          { "step": "Oil-Free Moisturizer", "image": "images/oilmoisturizer.jpg" },
+          { "step": "Matte Sunscreen SPF 30+", "image": "images/mattesunscreen.jpg" }
+        ],
+        "night": [
+          { "step": "Gel Cleanser", "image": "images/gelcleanser.jpg" },
+          { "step": "BHA Exfoliant (2-3x a week)", "image": "images/exfoliant.jpg" },
+          { "step": "Retinol Treatment", "image": "images/retinol.jpg" },
+          { "step": "Gel-Based Moisturizer", "image": "images/gelmoisturizer.jpg" }
+        ]
+      },
+      {
+        "skinType": "dry",
+        "description": "Flaky, rough, or tight skin with dehydration.",
+        "morning": [
+          { "step": "Hydrating Cleanser", "image": "images/hydratingcleanser.jpg" },
+          { "step": "Rose Water Toner", "image": "images/toner.jpg" },
+          { "step": "Thick Moisturizer", "image": "images/thickmoisturizer.jpg" },
+          { "step": "Moisturizing SPF", "image": "images/moisturizingspf.jpg" }
+        ],
+        "night": [
+          { "step": "Oil-Based Cleanser", "image": "images/oilcleanser.jpg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/serum.jpg" },
+          { "step": "Thick Night Cream", "image": "images/nightcream.jpg" }
+        ]
+      },
+      {
+        "skinType": "combination",
+        "description": "Oily T-zone (forehead, nose, chin) but dry cheeks.",
+        "morning": [
+          { "step": "Foaming Gel Cleanser", "image": "images/gelcleanser.jpg" },
+          { "step": "Balancing Toner", "image": "images/toner.jpg" },
+          { "step": "Lightweight Gel Moisturizer", "image": "images/gelmoisturizer.jpg" },
+          { "step": "Oil-Free Sunscreen SPF 30+", "image": "images/mattesunscreen.jpg" }
+        ],
+        "night": [
+          { "step": "Double Cleanse (if needed)", "image": "images/doublecleanse.jpg" },
+          { "step": "BHA for T-zone (2-3x a week)", "image": "images/exfoliant.jpg" },
+          { "step": "Hydrating Serum for Dry Areas", "image": "images/serum.jpg" },
+          { "step": "Gel-Cream Moisturizer", "image": "images/gelmoisturizer.jpg" }
+        ]
+      },
+      {
+        "skinType": "sensitive",
+        "description": "Easily irritated, redness, or allergic reactions.",
+        "morning": [
+          { "step": "Fragrance-Free Cleanser", "image": "images/sensitivecleanser.jpg" },
+          { "step": "Alcohol-Free Toner", "image": "images/toner.jpg" },
+          { "step": "Barrier-Repair Moisturizer", "image": "images/barriermoisturizer.jpg" },
+          { "step": "Mineral Sunscreen SPF 30+", "image": "images/mineralsunscreen.jpg" }
+        ],
+        "night": [
+          { "step": "Gentle Cleanser", "image": "images/sensitivecleanser.jpg" },
+          { "step": "Soothing Serum", "image": "images/serum.jpg" },
+          { "step": "Fragrance-Free Night Moisturizer", "image": "images/nightcream.jpg" }
+        ]
+      }
+    ]
+  }
+  
