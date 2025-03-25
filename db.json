@@ -1,30 +1,34 @@
 {
     "skincare": [
       {
-        "skinType": "normal",
-        "description": "Balanced skin, not too oily or dry.",
+        "skinType": "Normal Skin",
+        "description": "Balanced, smooth, and even in tone and texture, with few imperfections and minimal sensitivity.",
         "morning": [
           { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
           { "step": "Hydrating Toner", "image": "images/toner.jpg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/toner.jpg" },
           { "step": "Lightweight Moisturizer", "image": "images/moisturizer.jpg" },
           { "step": "Sunscreen SPF 30+", "image": "images/sunscreen.jpg" }
         ],
         "night": [
+          { "step": "Makeup Remover", "image": "images/cleanser.jpg" },
           { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
           { "step": "Hyaluronic Acid Serum", "image": "images/serum.jpg" },
           { "step": "Moisturizing Night Cream", "image": "images/nightcream.jpg" }
         ]
       },
       {
-        "skinType": "oily",
-        "description": "Shiny, greasy skin with frequent acne or blackheads.",
+        "skinType": "Oily Skin",
+        "description": "Produces excess sebum, leading to a shiny appearance, enlarged pores, and a tendency towards blemishes and breakouts. ",
         "morning": [
           { "step": "Oil-Control Cleanser", "image": "images/oilcleanser.jpg" },
           { "step": "Niacinamide Toner", "image": "images/toner.jpg" },
+          { "step": "Niacinamide Serum", "image": "images/toner.jpg" },
           { "step": "Oil-Free Moisturizer", "image": "images/oilmoisturizer.jpg" },
           { "step": "Matte Sunscreen SPF 30+", "image": "images/mattesunscreen.jpg" }
         ],
         "night": [
+          { "step": "Makeup Remover", "image": "images/cleanser.jpg" },
           { "step": "Gel Cleanser", "image": "images/gelcleanser.jpg" },
           { "step": "BHA Exfoliant (2-3x a week)", "image": "images/exfoliant.jpg" },
           { "step": "Retinol Treatment", "image": "images/retinol.jpg" },
@@ -32,8 +36,8 @@
         ]
       },
       {
-        "skinType": "dry",
-        "description": "Flaky, rough, or tight skin with dehydration.",
+        "skinType": "Dry Skin",
+        "description": "Lacks moisture, feels tight or rough, may appear dull or flaky, and can be sensitive to harsh products.",
         "morning": [
           { "step": "Hydrating Cleanser", "image": "images/hydratingcleanser.jpg" },
           { "step": "Rose Water Toner", "image": "images/toner.jpg" },
@@ -47,8 +51,8 @@
         ]
       },
       {
-        "skinType": "combination",
-        "description": "Oily T-zone (forehead, nose, chin) but dry cheeks.",
+        "skinType": "Combination Skin",
+        "description": "A mix of oily and dry areas, typically with an oily T-zone (forehead, nose, and chin) and normal to dry cheeks.",
         "morning": [
           { "step": "Foaming Gel Cleanser", "image": "images/gelcleanser.jpg" },
           { "step": "Balancing Toner", "image": "images/toner.jpg" },
@@ -63,8 +67,8 @@
         ]
       },
       {
-        "skinType": "sensitive",
-        "description": "Easily irritated, redness, or allergic reactions.",
+        "skinType": "Sensitive Skin",
+        "description": "Easily irritated by external factors, weather, skincare products, or environmental pollutants, and may react with redness, itching, or burning.",
         "morning": [
           { "step": "Fragrance-Free Cleanser", "image": "images/sensitivecleanser.jpg" },
           { "step": "Alcohol-Free Toner", "image": "images/toner.jpg" },
