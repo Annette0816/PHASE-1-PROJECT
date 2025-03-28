@@ -1,4 +1,74 @@
-*{
-    background-color: rgb(246, 187, 197);
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+     background: linear-gradient(to right, rgb(233, 157, 169), beige);
+     min-height: 300vh;
+     text-align: center;
+    }
+    h1{
+ font-family: "Rubik Dirt", system-ui;
+  font-weight: 100;
+  font-style: normal; 
+  text-align: center;
+    }
+nav{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+     background: linear-gradient(to right, beige, rgb(233, 157, 169));
+   ul, li{
+    display: inline-block;
+    list-style: none;
+   justify-content: space-between;
+    text-align: center;
+    
+   a{
+    
+    font-weight: 500;
+    font-size: large;
+   color: black;
+   font-style: italic;
+   
+    }
+  }
+  }
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+   
+  
+}
+.icons ul li{
+    display: inline;
+    gap: 30px;
+    
+}
+.icons ul li a i{
+    font-size: 50px;
+    
 
+        
+}
+h4 p ul {
+    list-style-position: inside;
+    list-style: square;
+} li{
+   display: block;
+   align-self: center;
+   justify-content: center;
+   
+}
+#about{
+    font-size: 30px;
+      
+}
+#skin-types ul{
+  
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+      
 }
