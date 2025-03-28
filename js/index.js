@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display fetched routine
     function displayRoutine(routineData) {
         document.getElementById("skin-title").textContent = routineData.skinType.toUpperCase() + " Skin Routine";
+        document.getElementById("skin-description").textContent = routineData.description;
         
         updateList("morning-list", routineData.morning);
         updateList("night-list", routineData.night);
@@ -66,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    
+   
 });
