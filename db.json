@@ -4,81 +4,81 @@
         "skinType": "Normal Skin",
         "description": "Balanced, smooth, and even in tone and texture, with few imperfections and minimal sensitivity.",
         "morning": [
-          { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
-          { "step": "Hydrating Toner", "image": "images/toner.jpg" },
-          { "step": "Hyaluronic Acid Serum", "image": "images/toner.jpg" },
-          { "step": "Lightweight Moisturizer", "image": "images/moisturizer.jpg" },
-          { "step": "Sunscreen SPF 30+", "image": "images/sunscreen.jpg" }
+          { "step": "Gentle Cleanser", "image": "images/Gentle Cleanser.jpeg" },
+          { "step": "Hydrating Toner", "image": "images/Hydrating Toner.jpeg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/Hyaluronic Acid Serum.jpeg" },
+          { "step": "Lightweight Moisturizer", "image": "images/Lightweight Moisturizer.jpeg" },
+          { "step": "Sunscreen SPF 30+", "image": "images/Sunsceen SPF 30+.jpeg"}
         ],
         "night": [
-          { "step": "Makeup Remover", "image": "images/cleanser.jpg" },
-          { "step": "Gentle Cleanser", "image": "images/cleanser.jpg" },
-          { "step": "Hyaluronic Acid Serum", "image": "images/serum.jpg" },
-          { "step": "Moisturizing Night Cream", "image": "images/nightcream.jpg" }
+          { "step": "Makeup Remover", "image": "images/Makeup Remover.jpeg" },
+          { "step": "Gentle Cleanser", "image": "images/Gentle Cleanser.jpeg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/Hyaluronic Acid Serum.jpeg" },
+          { "step": "Moisturizing Night Cream", "image": "images/Moisturizing Night Cream.jpeg" }
         ]
       },
       {
-        "skinType": "Oily Skin",
+        "skinType":"Oily Skin",
         "description": "Produces excess sebum, leading to a shiny appearance, enlarged pores, and a tendency towards blemishes and breakouts. ",
         "morning": [
-          { "step": "Oil-Control Cleanser", "image": "images/oilcleanser.jpg" },
-          { "step": "Niacinamide Toner", "image": "images/toner.jpg" },
-          { "step": "Niacinamide Serum", "image": "images/toner.jpg" },
-          { "step": "Oil-Free Moisturizer", "image": "images/oilmoisturizer.jpg" },
-          { "step": "Matte Sunscreen SPF 30+", "image": "images/mattesunscreen.jpg" }
+          { "step": "Oil-Control Cleanser", "image": "images/Oil-Control Cleanser.jpeg" },
+          { "step": "Niacinamide Toner", "image": "images/Niacinamide Toner.jpeg" },
+          { "step": "Niacinamide Serum", "image": "images/Niacinamide Serum.jpeg" },
+          { "step": "Oil-Free Moisturizer", "image": "images/Oil-Free Moisturizer.jpeg" },
+          { "step": "Matte Sunscreen SPF 30+", "image": "images/Matte Sunscreen SPF  30+.jpeg" }
         ],
         "night": [
-          { "step": "Makeup Remover", "image": "images/cleanser.jpg" },
-          { "step": "Gel Cleanser", "image": "images/gelcleanser.jpg" },
-          { "step": "BHA Exfoliant (2-3x a week)", "image": "images/exfoliant.jpg" },
-          { "step": "Retinol Treatment", "image": "images/retinol.jpg" },
-          { "step": "Gel-Based Moisturizer", "image": "images/gelmoisturizer.jpg" }
+          { "step": "Makeup Remover", "image": "images/Makeup Remover.jpeg" },
+          { "step": "Gel Cleanser", "image": "images/Foaming Gel  Cleanser.jpeg" },
+          { "step": "BHA Exfoliant (2-3x a week)", "image": "images/BHA Exfoliant.jpeg" },
+          { "step": "Retinol Treatment", "image": "images/Retinol Treatment.avif" },
+          { "step": "Gel-Based Moisturizer", "image": "images/Gel-Based Moisturizer.jpeg" }
         ]
       },
       {
-        "skinType": "Dry Skin",
+        "skinType":"Dry Skin",
         "description": "Lacks moisture, feels tight or rough, may appear dull or flaky, and can be sensitive to harsh products.",
         "morning": [
           { "step": "Hydrating Cleanser", "image": "images/hydratingcleanser.jpg" },
-          { "step": "Rose Water Toner", "image": "images/toner.jpg" },
-          { "step": "Thick Moisturizer", "image": "images/thickmoisturizer.jpg" },
-          { "step": "Moisturizing SPF", "image": "images/moisturizingspf.jpg" }
+          { "step": "Rose Water Toner", "image": "images/Rose Water Toner.jpeg" },
+          { "step": "Thick Moisturizer", "image": "images/Thick Moisturizer.jpeg" },
+          { "step": "Moisturizing SPF", "image": "images/Moisturizing  SPF.jpeg" }
         ],
         "night": [
-          { "step": "Oil-Based Cleanser", "image": "images/oilcleanser.jpg" },
-          { "step": "Hyaluronic Acid Serum", "image": "images/serum.jpg" },
-          { "step": "Thick Night Cream", "image": "images/nightcream.jpg" }
+          { "step": "Oil-Based Cleanser", "image": "images/Oil-based Cleanser.jpeg" },
+          { "step": "Hyaluronic Acid Serum", "image": "images/Hyaluronic Acid Serum.jpeg"},
+          { "step": "Thick Night Cream", "image": "images/Moisturizing Night Cream.jpeg" }
         ]
       },
       {
-        "skinType": "Combination Skin",
+        "skinType":"Combination Skin",
         "description": "A mix of oily and dry areas, typically with an oily T-zone (forehead, nose, and chin) and normal to dry cheeks.",
         "morning": [
-          { "step": "Foaming Gel Cleanser", "image": "images/gelcleanser.jpg" },
-          { "step": "Balancing Toner", "image": "images/toner.jpg" },
-          { "step": "Lightweight Gel Moisturizer", "image": "images/gelmoisturizer.jpg" },
-          { "step": "Oil-Free Sunscreen SPF 30+", "image": "images/mattesunscreen.jpg" }
+          { "step": "Foaming Gel Cleanser", "image": "images/Foaming Gel  Cleanser.jpeg" },
+          { "step": "Balancing Toner", "image": "images/Balancing Toner.jpeg" },
+          { "step": "Lightweight Gel Moisturizer", "image": "images/Lightweight Gel Moisturizer.jpeg" },
+          { "step": "Oil-Free Sunscreen SPF 30+", "image": "images/Oil-Free Sunscreen SPF 30+.jpeg" }
         ],
         "night": [
-          { "step": "Double Cleanse (if needed)", "image": "images/doublecleanse.jpg" },
-          { "step": "BHA for T-zone (2-3x a week)", "image": "images/exfoliant.jpg" },
-          { "step": "Hydrating Serum for Dry Areas", "image": "images/serum.jpg" },
-          { "step": "Gel-Cream Moisturizer", "image": "images/gelmoisturizer.jpg" }
+          { "step": "Double Cleanse (if needed)", "image": "images/Foaming Gel  Cleanser.jpeg" },
+          { "step": "BHA for T-zone (2-3x a week)", "image": "images/BHA Exfoliant.jpeg" },
+          { "step": "Hydrating Serum for Dry Areas", "image": "images/Hydrating Serum.jpeg" },
+          { "step": "Gel-Cream Moisturizer", "image": "images/Gel-Cream Moisturizer.jpeg" }
         ]
       },
       {
-        "skinType": "Sensitive Skin",
+        "skinType":"Sensitive Skin",
         "description": "Easily irritated by external factors, weather, skincare products, or environmental pollutants, and may react with redness, itching, or burning.",
         "morning": [
-          { "step": "Fragrance-Free Cleanser", "image": "images/sensitivecleanser.jpg" },
-          { "step": "Alcohol-Free Toner", "image": "images/toner.jpg" },
-          { "step": "Barrier-Repair Moisturizer", "image": "images/barriermoisturizer.jpg" },
-          { "step": "Mineral Sunscreen SPF 30+", "image": "images/mineralsunscreen.jpg" }
+          { "step": "Fragrance-Free Cleanser", "image": "images/Fragrance-Free Cleanser.jpeg" },
+          { "step": "Alcohol-Free Toner", "image": "images/Alcohol-Free Toner.jpeg" },
+          { "step": "Barrier-Repair Moisturizer", "image": "images/Barrier-Repair Moisturizer.jpeg" },
+          { "step": "Mineral Sunscreen SPF 30+", "image": "images/Mineral Sunscreen SPF 30+.jpeg" }
         ],
         "night": [
-          { "step": "Gentle Cleanser", "image": "images/sensitivecleanser.jpg" },
-          { "step": "Soothing Serum", "image": "images/serum.jpg" },
-          { "step": "Fragrance-Free Night Moisturizer", "image": "images/nightcream.jpg" }
+          { "step": "Gentle Cleanser", "image": "images/Gentle Cleanser.jpeg" },
+          { "step": "Soothing Serum", "image": "images/Soothing Serum.jpeg" },
+          { "step": "Fragrance-Free Night Moisturizer", "image": "images/Fragrance Free Night Moisturizer.jpeg" }
         ]
       }
     ]

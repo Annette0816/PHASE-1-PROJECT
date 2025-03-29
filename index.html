@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKINCARE ROUTINE FINDER</title>
+   
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <h1>Skincare Routine Finder</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#skin-types">Skin-Types</a></li>
+            <li><a href="#routine">Routines</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+    <h4 id="about">
+        <p>Discover your skin type and find the appropriate skin care routine for your here.</p>
+    </h4>
+    <h4 id="skin-types">
+        <p>
+            Here are the different types of skin:
+            <ul>
+                <li>Normal Skin</li>
+                <li>Oily Skin</li>
+                <li>Dry Skin</li>
+                <li>Combination Skin</li>
+                <li>Sensitive Skin</li>
+                
+            </ul>
+        </p>
+    </h4>
     
-        <h1>Skincare Routine Finder</h1>
-        <label for="skin-type">Select Your Skin Type:</label>
+       <label for="skin-type">Select Your Skin Type:</label>
         <select name="" id="skin-type">
             <option value="Normal Skin">Normal Skin</option>
             <option value="Oily Skin">Oily Skin</option>
@@ -26,7 +52,29 @@
             <ul id="morning-list"></ul>
             <h3>Night Routine</h3>
             <ul id="night-list"></ul>
+
+            <div id="image-container"></div>
         </div>
+        <h2>Add a New Skincare Routine</h2>
+<input type="text" id="skinType" placeholder="Enter Skin Type">
+<input type="text" id="description" placeholder="Enter Description">
+<button id="create-routine">Add Routine</button>
+
+
+
+<ul id="routine-list"></ul>
+
+        <section id="contacts">
+            <h2> Contact Us</h2>
+            <div  class="icons" >
+                <ul>
+                <li><a href="0762210552,"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="annzelitangugi@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a></li>
+                </ul>
+    
+            </div>
+        </section>
   
     <script src="js/index.js"></script>
 </body>

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const API_URL = "http://localhost:3000/skincare";
+  const API_URL = "https://skin-care-routine-finder.vercel.app/skincare";
 
   document.getElementById("show-routine").addEventListener("click", fetchSkincareRoutine);
 
@@ -72,8 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Create new routine (POST)
-    function createRoutine(newRoutine) {
-        fetch("db.json", {
+   document.getElementById("create-routine").addEventListener("click", handleCreate);
+
+    function handleCreate() {
+        const skinType = document.getElementById("skinType").value;
+        const description = document.getElementById("description").value;
+    
+        if (!skinType || !description) return;
+    
+        const newRoutine = { skinType, description, morning: [], night: [] };
+    
+        createRoutine(newRoutine);
+    }
+    
+      function createRoutine(newRoutine) {
+        fetch(API_URL, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -82,10 +95,15 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => response.json())
         .then(data => {
-            alert("New skincare routine added!");
-            console.log("Created:", data);
-        })
+            addRoutine(data)})
         .catch(error => console.error("Error adding routine:", error));
+    }
+
+    function addRoutine(routine) {
+        const routineList = document.getElementById("routine-list");
+        const li = document.createElement("li");
+        li.innerText = `${routine.skinType} - ${routine.description}`;
+        routineList.appendChild(li);
     }
 
     // Update existing routine (PUT)
