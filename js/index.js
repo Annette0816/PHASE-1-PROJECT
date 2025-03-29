@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const API_URL = "https://skin-care-routine-finder.vercel.app/skincare";
 
   document.getElementById("show-routine").addEventListener("click", fetchSkincareRoutine);
+  document.getElementById("create-routine").addEventListener("click", handleCreate);
 
  // Fetch skincare routine based on selected skin type
     function fetchSkincareRoutine() {
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Display fetched routine
     function displayRoutine(routineData) {
-        document.getElementById("skin-title").textContent = routineData.skinType.toUpperCase() + " Skin Routine";
+        document.getElementById("skin-title").textContent = routineData.skinType.toUpperCase() + "Routine";
         document.getElementById("skin-description").textContent = routineData.description;
         
         updateList("morning-list", routineData.morning);
@@ -71,21 +72,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Create new routine (POST)
-   document.getElementById("create-routine").addEventListener("click", handleCreate);
-
-    function handleCreate() {
+     // Create new routine (POST)
+     function handleCreate() {
         const skinType = document.getElementById("skinType").value;
         const description = document.getElementById("description").value;
-    
-        if (!skinType || !description) return;
-    
+
+        if (!skinType || !description) {
+            alert("Please enter both Skin Type and Description");
+            return;
+        }
+
         const newRoutine = { skinType, description, morning: [], night: [] };
-    
+
         createRoutine(newRoutine);
     }
-    
-      function createRoutine(newRoutine) {
+
+    function createRoutine(newRoutine) {
         fetch(API_URL, {
             method: "POST",
             headers: {
@@ -93,16 +95,40 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify(newRoutine),
         })
-        .then(response => response.json())
-        .then(data => {
-            addRoutine(data)})
-        .catch(error => console.error("Error adding routine:", error));
+            .then(response => response.json())
+            .then(data => {
+                addRoutine(data);
+            })
+            .catch(error => console.error("Error adding routine:", error));
     }
 
     function addRoutine(routine) {
         const routineList = document.getElementById("routine-list");
         const li = document.createElement("li");
+        li.id = `routine-${routine.id}`;
         li.innerText = `${routine.skinType} - ${routine.description}`;
+
+        // Update Button
+        const updateBtn = document.createElement("button");
+        updateBtn.innerText = "Update";
+        updateBtn.onclick = function () {
+            const newDescription = prompt("Enter new description:", routine.description);
+            if (newDescription) {
+                updateRoutine(routine.id, { skinType: routine.skinType, description: newDescription });
+            }
+        };
+
+        // Delete Button
+        const deleteBtn = document.createElement("button");
+        deleteBtn.innerText = "Delete";
+        deleteBtn.onclick = function () {
+            if (confirm("Are you sure you want to delete this routine?")) {
+                deleteRoutine(routine.id);
+            }
+        };
+
+        li.appendChild(updateBtn);
+        li.appendChild(deleteBtn);
         routineList.appendChild(li);
     }
 
@@ -115,12 +141,18 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify(updatedRoutine),
         })
-        .then(response => response.json())
-        .then(data => {
-            alert("Routine updated successfully!");
-            console.log("Updated:", data);
-        })
-        .catch(error => console.error("Error updating routine:", error));
+            .then(response => response.json())
+            .then(data => {
+                console.log("Updated:", data);
+
+                let routineItem = document.getElementById(`routine-${id}`);
+                if (routineItem) {
+                    routineItem.innerText = `${data.skinType} - ${data.description}`;
+                }
+
+                alert("Routine updated successfully!");
+            })
+            .catch(error => console.error("Error updating routine:", error));
     }
 
     // Delete a routine (DELETE)
@@ -128,9 +160,24 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(`${API_URL}/${id}`, {
             method: "DELETE",
         })
-        .then(() => {
-            alert("Routine deleted successfully!");
-        })
-        .catch(error => console.error("Error deleting routine:", error));
+            .then(() => {
+                alert("Routine deleted successfully!");
+
+                let routineItem = document.getElementById(`routine-${id}`);
+                if (routineItem) {
+                    routineItem.remove();
+                }
+            })
+            .catch(error => console.error("Error deleting routine:", error));
     }
 });
+
+
+
+
+
+
+
+
+
+

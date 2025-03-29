@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body{
      background: linear-gradient(to right, rgb(233, 157, 169), beige);
@@ -37,6 +38,7 @@ nav{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: aquamarine;
    
   
 }
